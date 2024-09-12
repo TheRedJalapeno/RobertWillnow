@@ -1,0 +1,298 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+h4 {
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: gray;
+    line-height: 1;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+img:hover {
+    transform: scale(1.2); /* Scales the image to 110% of its original size */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+}
+
+/* News Section */
+.news {
+    padding: 2rem;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.news ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.news ul li {
+    margin-bottom: 0.5rem;
+}
+
+.news ul li a {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    color: #fff;
+}
+
+footer .mailing-list {
+    margin-top: 1rem;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #ff9900;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* New Releases Section */
+.new-releases {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.new-releases h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card img {
+    width: 200px;
+    max-width: 25%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    background: radial-gradient(black, transparent);
+}
+
+@media (max-width: 400px) { 
+    .card img {
+        display: none;
+    }
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: left;
+    max-width: 90%;
+    margin: auto;
+}
+
+.card-content .release-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.card-content a.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-content a.more-info {
+    background-color: #444;
+}
+
+.card-content a.btn:hover {
+    background-color: #003580;
+}
+
+.card-content a.more-info:hover {
+    background-color: #222;
+}
+
+
+
+/* Blockquote */
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #0056b3;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+    quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #0056b3;
+    vertical-align: top;
+    line-height: 0;
+    margin-right: 0.2rem;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #0056b3;
+    vertical-align: bottom;
+    line-height: 0;
+    margin-left: 0.2rem;
+}
+
+blockquote p {
+    display: inline;
+}
