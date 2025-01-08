@@ -146,8 +146,7 @@ hero img {
 
 /* About Section */
 .about {
-    padding: 2rem;
-    display: flex;
+    margin: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -155,6 +154,52 @@ hero img {
 .about-text p {
     font-size: 1.2rem;
 }
+
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+
+/* MailChimp Formatting */
+
+div.mailchimpsignup {
+    max-width: 450px;
+    font-family: inherit;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+    border: 1px solid pink;
+    background: bisque;
+    border-radius: 8px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.mailchimpsignup h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+input#mc-embedded-subscribe {
+    font-size: 1.6rem;
+    margin: 18px;
+    border-radius: 8px;
+    background: darkorange;
+    padding: 5px 20px;
+}
+
+input#mce-EMAIL {
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 300px;
+    padding: 3px 7px;
+}
+
+img.refferal_badge {
+    width: 100px;
+    height: auto;
+}
+
 
 
 /* ----- ----- ----- */
