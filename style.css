@@ -47,7 +47,9 @@ a {
     text-decoration: none;
 }
 
-
+section {
+    margin: 2rem auto;
+}
 
 /* ----- ----- ----- */
 /* ----- ----- ----- */
@@ -153,6 +155,8 @@ hero img {
 
 .about-text p {
     font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 
@@ -180,7 +184,7 @@ div.mailchimpsignup {
 }
 
 input#mc-embedded-subscribe {
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin: 18px;
     border-radius: 8px;
     background: darkorange;
@@ -230,9 +234,8 @@ img.refferal_badge {
 
 .card img {
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    max-width: 250px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .card h3 {
@@ -261,6 +264,29 @@ img.refferal_badge {
 
 span.material-symbols-outlined {
     font-size: 1em;
+}
+
+
+div.book-links a.book-link {
+    display: inline-block;
+}
+
+.paperback-link {
+    background-color: #146eb4;
+    color: white;
+}
+
+.paperback-link:hover {
+    background-color: #115991;
+}
+
+.kindle-link {
+    background-color: #ff9900;
+    color: white;
+}
+
+.kindle-link:hover {
+    background-color: rgb(218, 131, 0);
 }
 
 
