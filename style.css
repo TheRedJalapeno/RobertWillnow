@@ -262,8 +262,9 @@ header a.brand {
 }
 
 /* ---------- Homepage hero ---------- */
+/* NASA Artemis II, "Orion and the Eclipse" (art002e016318). Smaller file on phones. */
 div.header {
-    background: #05060f url('art002-e-28292.jpg') no-repeat center / cover;
+    background: #050a1f url('hero-eclipse-960.jpg') no-repeat 62% 50% / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,6 +617,11 @@ footer a:hover {
     color: #ffd2a3;
 }
 
+footer .photo-credit {
+    font-size: .8rem;
+    opacity: .75;
+}
+
 span.material-symbols-outlined {
     font-size: 1em;
 }
@@ -655,6 +661,10 @@ span.material-symbols-outlined {
     .site-nav a {
         font-size: .9rem;
         padding: 12px 14px;
+    }
+
+    div.header {
+        background-image: url('hero-eclipse.jpg');
     }
 
     .hero img {
