@@ -108,7 +108,7 @@ about_faqs = [
 ]
 body = f"""{crumbs}
 <h1>About Robert Willnow</h1>
-<img class="cover" src="/robert_headshot.jpg" alt="Robert Willnow, science fiction author" width="220" style="border-radius:50%">
+<img class="cover" src="/robert_gideon_lg.jpg" alt="Robert Willnow, science fiction author, with his child" width="220" style="border-radius:50%">
 <div class="answer"><p>{e(ENTITY)}</p></div>
 <h2>Space Coast roots</h2>
 <p>Robert Willnow grew up in the stretch of Florida where the <a href="/articles/melbourne-florida-space-coast-science-fiction-author/">Space Coast</a> meets the <a href="/articles/vero-beach-treasure-coast-author/">Treasure Coast</a>, moving between <a href="/articles/breakout-author-sebastian-florida/">Sebastian</a>, Vero Beach, and Melbourne. Rocket launches from Cape Canaveral were a regular part of the sky, and the region's engineers, scientists, and launch crews were neighbors.</p>
@@ -126,7 +126,7 @@ body = f"""{crumbs}
 profile = {"@type": "ProfilePage", "@id": BASE + "/about/", "url": BASE + "/about/",
            "name": "About Robert Willnow", "mainEntity": {"@id": AUTHOR_ID}}
 write("/about/", page(path="/about/", title="About Robert Willnow | Science Fiction Author from Florida's Space Coast",
-                      description="Robert Willnow is a science fiction author from Florida's Space Coast, a Florida Tech and RIT alum, and creator of the Written By Victors space adventure series.", body=indent(body), image="/robert_headshot.jpg",
+                      description="Robert Willnow is a science fiction author from Florida's Space Coast, a Florida Tech and RIT alum, and creator of the Written By Victors space adventure series.", body=indent(body), image="/og-image.jpg",
                       schema_nodes=[profile, crumb_schema, faq_schema(about_faqs)], og_type="profile",
                       active="/about/"))
 

@@ -37,7 +37,7 @@ PERSON = {
     "@id": AUTHOR_ID,
     "name": "Robert Willnow",
     "url": BASE + "/about/",
-    "image": BASE + "/robert_headshot.jpg",
+    "image": BASE + "/robert_gideon_lg.jpg",
     "jobTitle": "Science fiction author",
     "description": ENTITY,
     "nationality": {"@type": "Country", "name": "United States"},
@@ -218,7 +218,7 @@ def breadcrumbs(trail):
 NAV = [("Home", "/"), ("Books", "/books/"), ("About", "/about/"), ("Articles", "/articles/")]
 
 
-def page(*, path, title, description, body, schema_nodes, image="/robert_gideon_lg.jpg",
+def page(*, path, title, description, body, schema_nodes, image="/og-image.jpg",
          og_type="website", active=None, keywords=None):
     url = BASE + path
     graph = {"@context": "https://schema.org", "@graph": [
@@ -242,7 +242,11 @@ def page(*, path, title, description, body, schema_nodes, image="/robert_gideon_
     <meta name="author" content="Robert Willnow">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="{url}">
-    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     {THEME_HEAD}
     <meta property="og:site_name" content="Robert Willnow">
     <meta property="og:type" content="{og_type}">
@@ -250,6 +254,7 @@ def page(*, path, title, description, body, schema_nodes, image="/robert_gideon_
     <meta property="og:description" content="{e(description)}">
     <meta property="og:url" content="{url}">
     <meta property="og:image" content="{BASE + image}">
+    <meta property="og:image:alt" content="{e(title)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{e(title)}">
     <meta name="twitter:description" content="{e(description)}">
